@@ -1,1 +1,8 @@
-zoo
+graphical perception
+stem-and-leaf
+brushing-and-linking
+splom
+choropleth map
+dorling cartogram
+dendrogram
+force-directed layouts

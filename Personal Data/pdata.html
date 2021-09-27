@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link de css de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- Fonts de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Spotify Data</title>
+</head>
+<body>
 
+  <div class="row justify-content-center mt-5">
+    <div class="col-9">
+
+      <div class="row justify-content-center">
+        <h1>TP Datos Personales - Infovis</h1>
+        <h3>Datos de Spotify</h3>
+        <p style="text-align: justify; text-justify: inter-word;">Para este trabajo, a partir de los datos provistos por Spotify que resumen mi actividad entre Julio del 2020 hasta Agosto del 2021, realice un total de 7 visualizaciones. Las 5 primeras se realizaron usando Tableau, mientras que las ultimas dos fueron realizadas en Flourish.</p>
+      </div>
+
+      <!-- TOP 10 SONGS BY MS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Primera Visualización</h5>
+          <p>En esta primera visualización se puede observar una comparación entre las 10 canciones con mayor tiempo en play de 2020 y 2021. Para construirla se utilizaron los archivos "StreamingHistory0" y "StreamingHistory1", donde se usó la suma total de los ms que duro cada reproducción agrupándolo por título de la canción.</p>
+          <div class="row justify-content-center">
+            
+            <div class='tableauPlaceholder' id='viz1632692968783' style='position: relative'>
+              <noscript>
+                <a href='#'>
+                  <img alt='Top 10 Songs Ms 2020 vs 2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10SongsMs2020vs2021&#47;1_rss.png' style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify-PersonalData&#47;Top10SongsMs2020vs2021' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10SongsMs2020vs2021&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+              </object>
+            </div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1632692968783');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '727px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- TOP 10 SONGS BY STREAMS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Segunda Visualización</h5>
+          <p>En esta visualización se puede observar una comparación entre las 10 canciones con mayor cantidad de reproducciones de 2020 y 2021. Para construirla se utilizaron los archivos "StreamingHistory0" y "StreamingHistory1", donde se agrupó por título de canción y se contó la cantidad total de reproducciones.</p>
+          <div class="row justify-content-center">
+            
+            <div class='tableauPlaceholder' id='viz1632693015582' style='position: relative'>
+              <noscript>
+                <a href='#'>
+                  <img alt='Top 10 Songs Streams 2020 vs 2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10SongsStreams2020vs2021&#47;1_rss.png' style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify-PersonalData&#47;Top10SongsStreams2020vs2021' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10SongsStreams2020vs2021&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+              </object>
+            </div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1632693015582');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '727px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- TOP 5 ARTISTS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Tercera Visualización</h5>
+          <p>En esta visualización se muestran los 5 artistas más escuchados tanto del 2020 como del 2021, respecto de la cantidad total de tiempo escuchado (en ms). Para realizarla se utilizó la información contenida en los archivos "StreamingHistory0" y "StreamingHistory1", y en este caso se agrupó por nombre de artista y se realizó la suma total del tiempo escuchado por cada uno (en ms).</p>
+          <div class="row justify-content-center">
+            
+            <div class='tableauPlaceholder' id='viz1632692870052' style='position: relative'>
+              <noscript>
+                <a href='#'>
+                  <img alt='Top 5 Artists 2020 vs 2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top5Artists2020vs2021&#47;1_rss.png' style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify-PersonalData&#47;Top5Artists2020vs2021' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top5Artists2020vs2021&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+              </object>
+            </div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1632692870052');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '727px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- ARTISTS WITH MORE SONGS IN PLAYLIST -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Cuarta Visualización</h5>
+          <p>En esta visualización se puede observar los 10 artistas de los que tengo mayor cantidad de canciones guardadas en mis playlists usando un treemap. Luego, al darle click a cada uno de los artistas se listan las 10 canciones más escuchadas de cada uno separadas en 2020 y 2021. Para construirla se utilizaron los archivos "StreamingHistory0", "StreamingHistory1" y "Playlists" donde el treemap se usó como filtro de los gráficos de barras.</p>
+          <div class="row justify-content-center">
+            
+            <div class='tableauPlaceholder' id='viz1632692925350' style='position: relative'>
+              <noscript>
+                <a href='#'>
+                  <img alt='Top 10 Artists with their top songs ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10Artistswiththeirtopsongs&#47;1_rss.png' style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='Spotify-PersonalData&#47;Top10Artistswiththeirtopsongs' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Top10Artistswiththeirtopsongs&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='es-ES' />
+              </object>
+            </div>
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1632692925350');
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '1000px';
+                vizElement.style.height = '827px';
+              } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '927px';
+              }
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- WEEKDAYS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Quinta Visualización</h5>
+          <p>En esta visualización se puede observar un heatmap que muestra la suma total del tiempo de reproducción respecto al horario y día de la semana. Para realizarlo se usaron los archivos "StreamingHistory0" y "StreamingHistory1", usando el campo que corresponde al horario en que termino cada reproducción.</p>
+          <div class="row justify-content-center">
+            
+            <div class='tableauPlaceholder' id='viz1632692728366' style='position: relative'>
+              <noscript>
+                  <a href='#'>
+                  <img alt='Week 2020 vs 2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Week2020vs2021&#47;1_rss.png' style='border: none' />
+                  </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                  <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                  <param name='embed_code_version' value='3' />
+                  <param name='site_root' value='' />
+                  <param name='name' value='Spotify-PersonalData&#47;Week2020vs2021' />
+                  <param name='tabs' value='no' />
+                  <param name='toolbar' value='yes' />
+                  <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sp&#47;Spotify-PersonalData&#47;Week2020vs2021&#47;1.png' />
+                  <param name='animate_transition' value='yes' />
+                  <param name='display_static_image' value='yes' />
+                  <param name='display_spinner' value='yes' />
+                  <param name='display_overlay' value='yes' />
+                  <param name='display_count' value='yes' />
+                  <param name='language' value='es-ES' />
+              </object>
+              </div>
+              <script type='text/javascript'>
+                  var divElement = document.getElementById('viz1632692728366');
+                  var vizElement = divElement.getElementsByTagName('object')[0];
+                  if (divElement.offsetWidth > 800) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                  } else if (divElement.offsetWidth > 500) {
+                      vizElement.style.width = '1000px';
+                      vizElement.style.height = '827px';
+                  } else {
+                      vizElement.style.width = '100%';
+                      vizElement.style.height = '727px';
+                  }
+                  var scriptElement = document.createElement('script');
+                  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- LINECHART -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Sexta Visualización</h5>
+          <p>En esta visualización se puede observar un linechart que representa el tiempo total escuchado en cada mes. Para realizarla se usaron los archivos "StreamingHistory0" y "StreamingHistory1", donde se volvió a utilizar el campo de la fecha de cada reproducción.</p>
+          <div class="row justify-content-center">
+            <div style="height:600px; width:900px;" class="flourish-embed flourish-chart" data-src="visualisation/7361479"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    
+      <!-- PLAYLISTS -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-10">
+          <h5>Septima Visualización</h5>
+          <p>En esta visualización se representan todas mis playlists usando un gráfico con jerarquía de tres niveles: Primero el nombre de las playlists, seguido de los nombres de los artistas, y por último el nombre de las canciones. El tamaño de las burbujas es con respecto a la cantidad de canciones. Para construirlo se usó el archivo "Playlists".</p>
+          <div class="row justify-content-center">
+            <div style="height:1000px; width:1000px;" class="flourish-embed flourish-hierarchy" data-src="visualisation/7361076"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+    </div>
+  </div>
+
+  <!-- Link de js de bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

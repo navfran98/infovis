@@ -15,5 +15,6 @@ Dos archivos llamados “Streaming History” en los cuales se lista el historia
 
 ## Visualizaciones
 
+2. [Spotify Data](https://navfran98.github.io/infovis/PersonalData/pdata.html)
 
 
